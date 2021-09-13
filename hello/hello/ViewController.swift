@@ -34,14 +34,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func colorButtonAction(_ sender: Any) {
-        if (flag){
+        if (flag2){
             topLabel.textColor = UIColor.magenta
-            flag = false
+            flag2 = false
         }
         else{
             topLabel.textColor = UIColor.green
-            flag = true
+            flag2 = true
         }
+    }
+    @IBAction func magicButtonAction(_ sender: Any) {
+        bottomLabel.textColor = UIColor.black
+        magicButton.setTitleColor(UIColor.white, for: .normal)
     }
 }
 
