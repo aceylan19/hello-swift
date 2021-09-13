@@ -14,11 +14,34 @@ class ViewController: UIViewController {
     @IBOutlet weak var sizeButton: UIButton!
     @IBOutlet weak var colorButton: UIButton!
     @IBOutlet weak var magicButton: UIButton!
+    var flag = true;
+    var flag2 = true;
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func sizeButtonAction(_ sender: Any) {
+        if (flag){
+            topLabel.font = UIFont.boldSystemFont(ofSize: 12)
+            flag = false
+        }
+        else{
+            topLabel.font = UIFont.boldSystemFont(ofSize: 24)
+            flag = true
+        }
+        
+    }
+    
+    @IBAction func colorButtonAction(_ sender: Any) {
+        if (flag){
+            topLabel.textColor = UIColor.magenta
+            flag = false
+        }
+        else{
+            topLabel.textColor = UIColor.green
+            flag = true
+        }
+    }
 }
 
