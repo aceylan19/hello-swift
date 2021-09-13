@@ -54,6 +54,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomLabel" destination="9RE-91-nHA" id="iX7-TO-9M8"/>
+                        <outlet property="colorButton" destination="IdM-8p-Pwt" id="LJY-3e-TpK"/>
+                        <outlet property="magicButton" destination="8Ky-PL-d0Q" id="Gyf-nK-7U0"/>
+                        <outlet property="sizeButton" destination="vQR-WB-VJa" id="PMd-8R-Ctn"/>
+                        <outlet property="topLabel" destination="vmw-zJ-GSf" id="g1V-vM-xPV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
